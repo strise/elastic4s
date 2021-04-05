@@ -17,7 +17,7 @@ object Build extends AutoPlugin {
     val CommonsIoVersion       = "2.4"
     val ElasticsearchVersion   = "6.5.2"
     val ExtsVersion            = "1.60.0"
-    val JacksonVersion         = "2.9.6"
+    val JacksonVersion         = "2.10.0"
     val Json4sVersion          = "3.6.1"
     val SprayJsonVersion       = "1.3.4"
     val AWSJavaSdkVersion      = "1.11.342"
@@ -34,8 +34,8 @@ object Build extends AutoPlugin {
 
   override def projectSettings = Seq(
     organization := org,
-    scalaVersion := "2.12.6",
-    crossScalaVersions := Seq("2.11.12", "2.12.6"),
+    scalaVersion := "2.12.13",
+    crossScalaVersions := Seq("2.12.13"),
     publishMavenStyle := true,
     resolvers += Resolver.mavenLocal,
     resolvers += Resolver.url("https://artifacts.elastic.co/maven"),
